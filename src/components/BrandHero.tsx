@@ -42,7 +42,7 @@ const BrandHero = () => {
         </div>
 
         {/* Brand Description */}
-        <Card className="brand-card max-w-4xl mx-auto text-left">
+        <Card className="brand-card max-w-6xl mx-auto text-left">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold matrix-text">
               A GRANDE INVERSÃO ESTÁ ACONTECENDO
@@ -67,16 +67,16 @@ const BrandHero = () => {
               </div>
               
               <div className="space-y-4">
-                <div className="aspect-square bg-gradient-to-br from-ritual-orange/20 to-moss-green/20 rounded-xl p-8 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 bg-matrix-green/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                      <Sparkles size={32} className="text-matrix-green animate-glow" />
-                    </div>
-                    <p className="text-sm text-mineral-white/70">
-                      Imagem conceitual: Figura humana em túnica ancestral
-                    </p>
-                  </div>
+                <div className="aspect-square rounded-xl overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/c334a75b-d288-46a3-b197-b055b894aa59.png" 
+                    alt="Líder do Movimento - Futuro Ancestral"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                <p className="text-xs text-mineral-white/60 text-center">
+                  Exemplo visual: Interface tecnológica com presença ancestral
+                </p>
               </div>
             </div>
             

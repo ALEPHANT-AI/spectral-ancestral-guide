@@ -174,6 +174,91 @@ const PracticalApplications = () => {
           </div>
         </Card>
 
+        {/* Real Photo Applications */}
+        <Card className="brand-card">
+          <h3 className="text-2xl font-bold matrix-text mb-8">APLICAÇÕES COM FOTOGRAFIA REAL</h3>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* LinkedIn Post Example */}
+            <div className="space-y-4">
+              <h4 className="font-semibold text-matrix-green">LINKEDIN POST EXAMPLE</h4>
+              <div className="bg-cosmic-black/60 rounded-xl p-6 border border-moss-green/20">
+                <div className="space-y-4">
+                  {/* Header */}
+                  <div className="flex items-center space-x-3">
+                    <img 
+                      src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+                      alt="Logo" 
+                      className="w-8 h-8 object-contain"
+                    />
+                    <div>
+                      <div className="text-sm font-medium text-mineral-white">Movimento Futuro Ancestral</div>
+                      <div className="text-xs text-mineral-white/60">Transformação Digital Humana</div>
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="space-y-3">
+                    <p className="text-sm text-mineral-white/90">
+                      "A IA vai nos forçar a voltar a ser humanos."
+                    </p>
+                    <div className="rounded-lg overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/aa6d391d-42a4-4fb7-b422-54a162bad075.png" 
+                        alt="Conteúdo visual da marca"
+                        className="w-full h-32 object-cover"
+                      />
+                    </div>
+                    <p className="text-xs text-mineral-white/70">
+                      Enquanto a IA assume tarefas mecânicas, redescubrimos nossa essência ancestral.
+                    </p>
+                  </div>
+                  
+                  {/* Engagement */}
+                  <div className="flex items-center space-x-4 pt-2 border-t border-moss-green/20">
+                    <div className="text-xs text-matrix-green">👍 147</div>
+                    <div className="text-xs text-matrix-green">💬 23</div>
+                    <div className="text-xs text-matrix-green">🔄 41</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Video Thumbnail Example */}
+            <div className="space-y-4">
+              <h4 className="font-semibold text-matrix-green">VIDEO THUMBNAIL</h4>
+              <div className="relative rounded-xl overflow-hidden">
+                <img 
+                  src="/lovable-uploads/1a34fed5-2820-42b0-af7b-a12a53fe5237.png" 
+                  alt="Video thumbnail"
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute inset-0 bg-cosmic-black/40" />
+                <div className="absolute top-4 left-4">
+                  <img 
+                    src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+                    alt="Logo" 
+                    className="w-6 h-6 object-contain opacity-90"
+                  />
+                </div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <h5 className="text-sm font-bold text-matrix-green mb-1">
+                    O FUTURO É ANCESTRAL
+                  </h5>
+                  <p className="text-xs text-mineral-white/80">
+                    Como a IA nos liberta para sermos humanos
+                  </p>
+                </div>
+                <div className="absolute center-center">
+                  <div className="w-12 h-12 bg-matrix-green/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <div className="w-0 h-0 border-l-4 border-l-matrix-green border-y-2 border-y-transparent ml-1" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Card>
+
         {/* Usage Guidelines */}
         <Card className="brand-card">
           <h3 className="text-2xl font-bold matrix-text mb-6">DIRETRIZES DE APLICAÇÃO</h3>
