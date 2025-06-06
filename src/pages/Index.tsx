@@ -2,15 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download, Eye, Palette, Type, Layout, Image, MessageSquare, FileText } from 'lucide-react';
+import { Eye, Palette, Type, Layout, Image, MessageSquare } from 'lucide-react';
 import BrandHero from '@/components/BrandHero';
 import ColorPalette from '@/components/ColorPalette';
 import Typography from '@/components/Typography';
 import VisualAesthetics from '@/components/VisualAesthetics';
 import LayoutComposition from '@/components/LayoutComposition';
-import PracticalApplications from '@/components/PracticalApplications';
 import BrandVoice from '@/components/BrandVoice';
-import BrandFinalization from '@/components/BrandFinalization';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('hero');
@@ -28,9 +26,7 @@ const Index = () => {
     { id: 'typography', label: 'Tipografia', icon: Type },
     { id: 'aesthetics', label: 'Estética Visual', icon: Image },
     { id: 'layout', label: 'Composição', icon: Layout },
-    { id: 'applications', label: 'Aplicações', icon: FileText },
     { id: 'voice', label: 'Tom da Marca', icon: MessageSquare },
-    { id: 'finalization', label: 'Download', icon: Download },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -47,8 +43,15 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-cosmic-black/80 backdrop-blur-md border-b border-moss-green/20">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-bold matrix-text">
-              MOVIMENTO FUTURO ANCESTRAL
+            <div className="flex items-center space-x-4">
+              <img 
+                src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+                alt="Movimento Futuro Ancestral Logo" 
+                className="w-8 h-8 object-contain"
+              />
+              <div className="text-xl font-bold matrix-text">
+                MOVIMENTO FUTURO ANCESTRAL
+              </div>
             </div>
             
             <div className="hidden md:flex items-center space-x-1">
@@ -71,10 +74,9 @@ const Index = () => {
               })}
             </div>
 
-            <Button className="brand-button">
-              <Download size={16} className="mr-2" />
-              Brand Kit
-            </Button>
+            <div className="text-sm text-mineral-white/60 font-mono">
+              BRAND BOOK v1.0
+            </div>
           </div>
         </div>
       </nav>
@@ -117,24 +119,27 @@ const Index = () => {
 
         <div className="section-divider" />
 
-        {/* Practical Applications */}
-        <section id="applications" className="py-20">
-          <PracticalApplications />
-        </section>
-
-        <div className="section-divider" />
-
         {/* Brand Voice */}
         <section id="voice" className="py-20">
           <BrandVoice />
         </section>
 
-        <div className="section-divider" />
-
-        {/* Finalization */}
-        <section id="finalization" className="py-20">
-          <BrandFinalization />
-        </section>
+        {/* Footer */}
+        <footer className="py-16 border-t border-moss-green/20">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+                alt="Movimento Futuro Ancestral Logo" 
+                className="w-16 h-16 object-contain opacity-60"
+              />
+            </div>
+            <p className="text-mineral-white/40 text-sm">
+              Este é o exemplo vivo da nossa identidade visual.<br />
+              Brand Book Digital - Movimento Futuro Ancestral
+            </p>
+          </div>
+        </footer>
       </div>
 
       {/* Background Elements */}

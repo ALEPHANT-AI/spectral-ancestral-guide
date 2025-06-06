@@ -1,34 +1,10 @@
 
 import React from 'react';
 import { Card } from '@/components/ui/card';
-import { Globe, FileText, Instagram, Video, Presentation, Download } from 'lucide-react';
+import { Instagram, Video, Presentation } from 'lucide-react';
 
 const PracticalApplications = () => {
   const applications = [
-    {
-      icon: Globe,
-      title: 'WEBSITE',
-      description: 'Landing pages e sites institucionais',
-      features: [
-        'Hero com fundo cósmico e CTA matrix',
-        'Cards de conteúdo com sombras sutis',
-        'Navegação minimalista fixa',
-        'Formulários com estilo matrix',
-        'Footer com elementos ancestrais (fotos)'
-      ]
-    },
-    {
-      icon: FileText,
-      title: 'PITCH DECKS',
-      description: 'Apresentações comerciais e estratégicas',
-      features: [
-        'Slides com fundo cosmic-black',
-        'Títulos em matrix-green impact',
-        'Gráficos com paleta brand',
-        'Fotos rituais como elementos visuais',
-        'Tipografia Space Grotesk limpa'
-      ]
-    },
     {
       icon: Instagram,
       title: 'SOCIAL MEDIA',
@@ -52,6 +28,18 @@ const PracticalApplications = () => {
         'Transições suaves e tech',
         'Elementos gráficos minimalistas'
       ]
+    },
+    {
+      icon: Presentation,
+      title: 'PITCH DECKS',
+      description: 'Apresentações comerciais e estratégicas',
+      features: [
+        'Slides com fundo cosmic-black',
+        'Títulos em matrix-green impact',
+        'Gráficos com paleta brand',
+        'Fotos rituais como elementos visuais',
+        'Tipografia Space Grotesk limpa'
+      ]
     }
   ];
 
@@ -70,7 +58,7 @@ const PracticalApplications = () => {
 
       <div className="grid gap-8">
         {/* Applications Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {applications.map((app, index) => {
             const Icon = app.icon;
             return (
@@ -100,61 +88,6 @@ const PracticalApplications = () => {
           })}
         </div>
 
-        {/* Website Example */}
-        <Card className="brand-card">
-          <h3 className="text-2xl font-bold matrix-text mb-8">EXEMPLO: WEBSITE LAYOUT</h3>
-          
-          <div className="bg-cosmic-black/50 rounded-xl p-8 border border-moss-green/20">
-            {/* Header */}
-            <div className="flex items-center justify-between mb-8 pb-4 border-b border-moss-green/20">
-              <div className="w-48 h-6 bg-matrix-green/30 rounded" />
-              <div className="flex space-x-6">
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <div key={i} className="w-16 h-4 bg-mineral-white/20 rounded" />
-                ))}
-              </div>
-              <div className="w-24 h-8 bg-matrix-green/20 rounded-lg" />
-            </div>
-
-            {/* Hero */}
-            <div className="text-center space-y-6 mb-12">
-              <div className="w-80 h-12 bg-mineral-white/20 rounded mx-auto" />
-              <div className="w-96 h-6 bg-mineral-white/10 rounded mx-auto" />
-              <div className="w-40 h-10 bg-matrix-green/20 rounded-lg mx-auto" />
-            </div>
-
-            {/* Content Grid */}
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              {Array.from({ length: 3 }).map((_, i) => (
-                <div key={i} className="bg-stellar-gray/30 rounded-xl p-6">
-                  <div className="space-y-4">
-                    <div className="w-full aspect-video bg-gradient-to-br from-ritual-orange/10 to-moss-green/10 rounded-lg" />
-                    <div className="w-32 h-4 bg-matrix-green/30 rounded" />
-                    <div className="space-y-2">
-                      <div className="w-full h-3 bg-mineral-white/20 rounded" />
-                      <div className="w-3/4 h-3 bg-mineral-white/10 rounded" />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Footer */}
-            <div className="border-t border-moss-green/20 pt-6">
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="w-32 h-4 bg-matrix-green/30 rounded" />
-                {Array.from({ length: 3 }).map((_, i) => (
-                  <div key={i} className="space-y-2">
-                    <div className="w-24 h-3 bg-mineral-white/20 rounded" />
-                    <div className="w-20 h-3 bg-mineral-white/10 rounded" />
-                    <div className="w-16 h-3 bg-mineral-white/10 rounded" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </Card>
-
         {/* Social Media Templates */}
         <Card className="brand-card">
           <h3 className="text-2xl font-bold matrix-text mb-8">TEMPLATES SOCIAL MEDIA</h3>
@@ -164,7 +97,13 @@ const PracticalApplications = () => {
             <div>
               <h4 className="font-semibold text-matrix-green mb-4">INSTAGRAM POST</h4>
               <div className="aspect-square bg-cosmic-black/80 rounded-xl p-6 border border-moss-green/20 relative overflow-hidden">
-                <div className="absolute top-4 right-4 w-6 h-6 bg-matrix-green/20 rounded" />
+                <div className="absolute top-4 right-4">
+                  <img 
+                    src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+                    alt="Logo" 
+                    className="w-6 h-6 object-contain opacity-60"
+                  />
+                </div>
                 <div className="h-full flex flex-col justify-between">
                   <div className="space-y-3">
                     <div className="w-full h-4 bg-matrix-green/30 rounded" />
@@ -204,7 +143,14 @@ const PracticalApplications = () => {
               <h4 className="font-semibold text-matrix-green mb-4">CARROSSEL</h4>
               <div className="aspect-square bg-cosmic-black/80 rounded-xl p-4 border border-moss-green/20">
                 <div className="grid grid-cols-2 gap-2 h-full">
-                  <div className="bg-stellar-gray/30 rounded-lg p-3">
+                  <div className="bg-stellar-gray/30 rounded-lg p-3 relative">
+                    <div className="absolute top-2 right-2">
+                      <img 
+                        src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+                        alt="Logo" 
+                        className="w-4 h-4 object-contain opacity-40"
+                      />
+                    </div>
                     <div className="space-y-2">
                       <div className="w-full h-2 bg-matrix-green/30 rounded" />
                       <div className="w-3/4 h-2 bg-mineral-white/20 rounded" />

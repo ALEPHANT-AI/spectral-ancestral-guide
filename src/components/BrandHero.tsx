@@ -7,6 +7,15 @@ const BrandHero = () => {
   return (
     <div className="max-w-7xl mx-auto px-6">
       <div className="text-center space-y-12 animate-fade-in">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/lovable-uploads/38d9b5b0-77fe-465f-8796-f221c6ac0dfd.png" 
+            alt="Movimento Futuro Ancestral Logo" 
+            className="w-32 h-32 object-contain"
+          />
+        </div>
+
         {/* Main Title */}
         <div className="space-y-6">
           <div className="inline-flex items-center space-x-2 text-matrix-green text-sm font-medium tracking-wider uppercase">
